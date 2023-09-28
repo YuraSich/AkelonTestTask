@@ -12,11 +12,11 @@ class Program
             new("Юлина Юлия Юлиановна"),
             new("Сидоров Сидор Сидорович"),
             new("Павлов Павел Павлович"),
-            new("Георгиев Георг Георгиевич")
+            new("Георгиев Георг Георгиевич", maxVacationDuration: 35)
             }
         };
 
-        department.DistributeVacations(28);
+        department.DistributeVacations();
         department.PrintVacationByPerson();
         Console.WriteLine("Отпуска по времени");
         department.PrintVacationByDate();
